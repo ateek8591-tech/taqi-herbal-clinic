@@ -1,0 +1,25 @@
+:root{
+  --green:#0f9d58;
+  --muted:#6b7280;
+  --card:#ffffff;
+}
+body { margin:0; background:#f7fdf7; font-family: 'JameelNoori', 'Segoe UI', sans-serif; }
+.app { padding:18px; max-width:1200px; margin:0 auto; }
+.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+.header .title { font-size:24px; color:var(--green); font-weight:700; }
+.controls { display:flex; gap:8px; align-items:center; }
+
+/* Layout */
+.grid { display:grid; grid-template-columns: 320px 1fr; gap:16px; }
+.card { background:var(--card); border-radius:8px; padding:12px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+
+/* Form */
+.form-section { margin-bottom:12px; border:1px solid #e6f2e9; padding:10px; border-radius:8px; }
+.accordion-head { display:flex; justify-content:space-between; cursor:pointer; padding:6px 0; font-weight:600; }
+.input, textarea, select { width:100%; padding:8px; border-radius:6px; border:1px solid #e5e7eb; font-family:inherit; margin-top:6px; }
+
+/* Cards list */
+.patient-card { border:1px solid #e6f2e9; padding:8px; border-radius:8px; display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+
+/* Responsive */
+@media (max-width:900px){ .grid { grid-template-columns: 1fr; } }
